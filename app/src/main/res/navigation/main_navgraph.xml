@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navgraph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.utn.parcial_castagnola.fragments.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_detail"
+            app:destination="@id/detail" />
+        <action
+            android:id="@+id/action_home_to_add"
+            app:destination="@id/add" />
+    </fragment>
+    <fragment
+        android:id="@+id/user"
+        android:name="com.utn.parcial_castagnola.fragments.User"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_user_to_editUser"
+            app:destination="@id/editUser" />
+        <action
+            android:id="@+id/action_user_to_changePass"
+            app:destination="@id/changePass" />
+    </fragment>
+    <fragment
+        android:id="@+id/detail"
+        android:name="com.utn.parcial_castagnola.fragments.Detail"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detail_to_edit"
+            app:destination="@id/edit" />
+    </fragment>
+    <fragment
+        android:id="@+id/add"
+        android:name="com.utn.parcial_castagnola.fragments.Add"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/edit"
+        android:name="com.utn.parcial_castagnola.fragments.Edit"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" />
+    <fragment
+        android:id="@+id/editUser"
+        android:name="com.utn.parcial_castagnola.fragments.EditUser"
+        android:label="fragment_edit_user"
+        tools:layout="@layout/fragment_edit_user" />
+    <fragment
+        android:id="@+id/changePass"
+        android:name="com.utn.parcial_castagnola.fragments.ChangePass"
+        android:label="fragment_change_pass"
+        tools:layout="@layout/fragment_change_pass" />
+</navigation>

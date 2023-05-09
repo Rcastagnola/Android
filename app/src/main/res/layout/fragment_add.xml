@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/add"
+    android:layout_margin="2dp"
+    card_view:cardBackgroundColor="#000000"
+    card_view:cardCornerRadius="40dp"
+    card_view:cardElevation="6dp"
+    card_view:contentPadding="4dp">
+
+    <ImageView
+        android:src="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/add_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="#38ffffff"
+            android:drawablePadding="20dp"
+            android:hint="Nombre"
+            android:padding="7dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/add_lastname"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/add_name"
+            android:background="#38ffffff"
+            android:drawablePadding="20dp"
+            android:hint="Apellido"
+            android:padding="7dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_position"
+            android:layout_below="@id/add_lastname"
+            android:background="#38ffffff"
+            android:hint="Posicion"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:padding="7dp"
+            android:drawablePadding="20dp" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_number"
+            android:layout_below="@id/add_lastname"
+            android:background="#38ffffff"
+            android:hint="Numero"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:padding="7dp"
+            android:layout_toEndOf="@+id/add_position"
+            android:drawablePadding="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_photo"
+            android:layout_below="@id/add_number"
+            android:background="#38ffffff"
+            android:hint="URL Foto"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:padding="7dp"
+
+            android:drawablePadding="20dp"/>
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_height"
+            android:layout_below="@id/add_photo"
+            android:background="#38ffffff"
+            android:hint="Altura"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:padding="7dp"
+
+            android:drawablePadding="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_age"
+            android:layout_below="@id/add_photo"
+            android:background="#38ffffff"
+            android:hint="Edad"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:padding="7dp"
+            android:layout_toEndOf="@+id/add_height"
+            android:drawablePadding="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_date"
+            android:layout_below="@id/add_age"
+            android:background="#38ffffff"
+            android:hint="Fecha de Nacimiento"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:padding="7dp"
+
+            android:drawablePadding="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_nationality"
+            android:layout_below="@id/add_date"
+            android:background="#38ffffff"
+            android:hint="Nacionalidad"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:padding="7dp"
+
+            android:drawablePadding="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_contract"
+            android:layout_below="@id/add_nationality"
+            android:background="#38ffffff"
+            android:hint="Vencimiento contrato"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:padding="7dp"
+
+            android:drawablePadding="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_price"
+            android:layout_below="@id/add_contract"
+            android:background="#38ffffff"
+            android:hint="Valor Actual"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:padding="7dp"
+
+            android:drawablePadding="20dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addcancel"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_price"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#780101"
+            android:text="CANCELAR"
+            android:textColor="@color/white"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addconfirm"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/addcancel"
+            android:layout_marginStart="180dp"
+            android:backgroundTint="#780101"
+            android:text="CONFIRMAR"
+            android:textColor="@color/white"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

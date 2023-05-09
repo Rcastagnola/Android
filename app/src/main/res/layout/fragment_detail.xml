@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detail"
+    android:layout_margin="2dp"
+    card_view:cardBackgroundColor="#000000"
+    card_view:cardCornerRadius="40dp"
+    card_view:cardElevation="6dp"
+    card_view:contentPadding="4dp">
+
+    <ImageView
+        android:src="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/detail_photo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/detail_lastname"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Nombre"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/detail_lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/detail_name"
+            android:text="Apellido"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/detail_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Altura"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/detail_photo"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/detail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Fecha de nacimiento"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/detail_height"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/detail_nationality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Nacionalidad"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/detail_date"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/detail_contract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Contrato"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/detail_nationality"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/detail_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Valor"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/detail_contract"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_price"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#780101"
+            android:text="VOLVER"
+            android:textColor="@color/white"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btnback"
+            android:layout_marginStart="210dp"
+            android:backgroundTint="#780101"
+            android:text="EDITAR"
+            android:textColor="@color/white"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btndelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#780101"
+            android:text="BORRAR"
+            android:layout_below="@id/btnback"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

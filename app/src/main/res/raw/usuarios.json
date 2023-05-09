@@ -1,0 +1,25 @@
+[
+	{
+	"user": "JPUser22",
+	"password": "12345",
+	"name": "Juan",
+	"lastname": "Perez",
+	"email": "juanperez@gmail.com"
+	},
+	{ 
+	"user": "Fulanito44",
+	"password": "12345",
+	"name": "Alberto",
+	"lastname": "Mendez",
+	"email": "Albert@gmail.com"
+	},
+	{ 
+	"user": "rcastagnola",
+	"password": "12345",
+	"name": "Ramiro",
+	"lastname": "Castagnola",
+	"email": "rcastagnola@gmail.com"
+	}
+]
+
+
